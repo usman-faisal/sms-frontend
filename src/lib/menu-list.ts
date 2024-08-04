@@ -8,6 +8,8 @@ import {
   LucideIcon,
   Group,
   AreaChartIcon,
+
+  Settings2
 } from "lucide-react";
 
 type Submenu = {
@@ -65,13 +67,14 @@ export function getMenuListAdmin(pathname: string): Group[] {
           icon: AreaChartIcon,
           submenus: [],
         },
+
         {
-          href: "/admin/permissions",
-          label: "Permissions",
-          active: pathname.includes("/admin/permissions"),
-          icon: Bookmark,
+          href: "/admin/inventory",
+          label: "Inventory",
+          active: pathname.includes('/admin/inventory'),
+          icon: Settings,
           submenus: [],
-        },
+        }
       ],
     },
   ];
